@@ -105,6 +105,39 @@
         .contact-section { border-left: 5px solid #ff00ff; }
         .contact-section h2 { color: #ff00ff; }
 
+        /* 🆕 फॉर्म इनपुट स्टाइल्स */
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            margin-top: 20px;
+            max-width: 500px;
+        }
+        .contact-form input, .contact-form textarea {
+            padding: 12px;
+            border-radius: 6px;
+            border: 2px solid #555;
+            background-color: #16161d;color: #fff;
+            font-size: 15px;
+        }
+        .contact-form input:focus, .contact-form textarea:focus {
+            border-color: #ff00ff;
+            outline: none;
+        }
+        .submit-btn {
+            background-color: #ff00ff;
+            color: white;
+            border: none;
+            padding: 12px;
+            font-weight: bold;
+            cursor: pointer;
+            border-radius: 6px;
+            transition: 0.3s;
+        }
+        .submit-btn:hover {
+            background-color: #cc00cc;
+        }
+
         /* सोशल मीडिया बटन्स स्टाइल */
         .social-buttons {
             display: flex;
@@ -123,7 +156,9 @@
         .youtube { background-color: #ff0000; }
         .youtube:hover { background-color: #cc0000; }
         .instagram { background-color: #e1306c; }
-        .instagram:hover { background-color: #b82354; }h2 { margin-top: 0; font-size: 26px; }
+        .instagram:hover { background-color: #b82354; }
+
+        h2 { margin-top: 0; font-size: 26px; }
         h3 { color: #00ffd1; margin-top: 25px; }
         p { font-size: 16px; line-height: 1.6; color: #e0e0e0; }
         ul { background: #16161d; padding: 20px 40px; border-radius: 8px; list-style-type: square; }
@@ -179,9 +214,7 @@
             <h2>Minecraft में 'Secret House' कैसे बनाएं?</h2>
             <img src="https://images.unsplash.com/photo-1607604276583-eef5d076aa5f?w=800&auto=format&fit=crop&q=60" alt="Gaming Setup" class="post-image">
             <p>Minecraft में अपने कीमती सामान जैसे डायमंड्स और गोल्ड को ज़ोम्बीज़ और दूसरे प्लेयर्स से छुपाने के लिए एक Secret House होना बहुत ज़रूरी है।</p>
-        </article>
-
-        <!-- पांचवा पोस्ट: Call of Duty -->
+        </article><!-- पांचवा पोस्ट: Call of Duty -->
         <article id="cod" class="cod-post">
             <h2>Call of Duty Mobile: 3 सेटिंग्स जो आपको प्रो प्लेयर बना देंगी</h2>
             <p>COD Mobile एक बहुत ही तेज़ गेम है। अगर आपकी सेटिंग्स सही नहीं हैं, तो आप दुश्मनों से मुकाबला नहीं कर पाएंगे।</p>
@@ -198,13 +231,22 @@
             <p>हेलो गेमर्स! मेरा नाम करन है और मैं इस वेबसाइट का फाउंडर हूँ। मुझे गेम्स खेलना और उनके सीक्रेट्स, टिप्स और ट्रिक्स शेयर करना बहुत पसंद है।</p>
         </div>
 
-        <!-- Contact Us सेक्शन -->
+        <!-- Contact Us सेक्शन + 🆕 वर्किंग फॉर्म -->
         <div id="contact" class="contact-section">
             <h2>Contact Us (संपर्क करें)</h2>
-            <p>📧 ईमेल आईडी: karangamingzone@gmail.com</p><h3>🌐 मेरे सोशल मीडिया हैंडल्स:</h3>
+            <p>📧 ईमेल आईडी: karangamingzone@gmail.com</p>
+            
+            <!-- मैसेज बॉक्स -->
+            <form action="https://formspree.io/f/xoqgqpdl" method="POST" class="contact-form">
+                <input type="text" name="name" placeholder="आपका नाम" required>
+                <input type="email" name="_replyto" placeholder="आपकी ईमेल आईडी" required>
+                <textarea name="message" rows="4" placeholder="अपना संदेश यहाँ लिखें..." required></textarea>
+                <button type="submit" class="submit-btn">संदेश भेजें</button>
+            </form>
+
+            <h3>🌐 मेरे सोशल मीडिया हैंडल्स:</h3>
             <div class="social-buttons">
                 <a href="https://www.youtube.com" target="_blank" class="social-btn youtube">📺 YouTube Channel</a>
-                <!-- 🆕 यहाँ आपका असली इंस्टाग्राम लिंक जुड़ चुका है! -->
                 <a href="https://www.instagram.com/karan.96778" target="_blank" class="social-btn instagram">📸 Instagram</a>
             </div>
         </div>
