@@ -13,6 +13,7 @@
             margin: 0;
             padding: 20px;
             text-align: center;
+            scroll-behavior: smooth; /* इससे क्लिक करने पर पेज आराम से सरकेगा */
         }
         header {
             background-color: #16161d;
@@ -20,7 +21,7 @@
             border-radius: 10px;
             border-bottom: 4px solid #ff4a5a;
             box-shadow: 0px 4px 15px rgba(255, 74, 90, 0.3);
-            margin-bottom: 30px;
+            margin-bottom: 20px;
         }
         h1 {
             color: #ff4a5a;
@@ -34,6 +35,30 @@
             font-size: 18px;
             margin: 0;
         }
+        
+        /* 🕹️ नया नेविगेशन मेनू डिज़ाइन */
+        nav {
+            background-color: #16161d;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+            box-shadow: 0px 4px 10px rgba(0,0,0,0.4);
+        }
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 16px;
+            margin: 0 15px;
+            padding: 8px 16px;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+        /* बटन्स पर माउस ले जाने पर चमकने वाले कलर्स */
+        nav a.ff-btn:hover { background-color: #ff4a5a; color: #fff; }
+        nav a.gta-btn:hover { background-color: #e0a96d; color: #000; }
+        nav a.bgmi-btn:hover { background-color: #39ff14; color: #000; }
+
         .container {
             max-width: 900px;
             margin: 0 auto;
@@ -47,16 +72,13 @@
             box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.5);
         }
         
-        /* 1. फ्री फायर पोस्ट स्टाइल */
         .ff-post { border-left: 5px solid #ff4a5a; }
         .ff-post h2 { color: #ff4a5a; }
 
-        /* 2. GTA पोस्ट स्टाइल */
         .gta-post { border-left: 5px solid #e0a96d; }
         .gta-post h2 { color: #e0a96d; }
 
-        /* 3. BGMI पोस्ट स्टाइल (नया) */
-        .bgmi-post { border-left: 5px solid #39ff14; } /* नियॉन ग्रीन बॉर्डर */
+        .bgmi-post { border-left: 5px solid #39ff14; }
         .bgmi-post h2 { color: #39ff14; }
 
         h2 {
@@ -100,11 +122,17 @@
         <p>फ्री फायर, GTA 5 और BGMI की तगड़ी ट्रिक्स यहाँ मिलेंगी!</p>
     </header>
 
+    <!-- 🕹️ नया नेविगेशन मेनू बार -->
+    <nav>
+        <a href="#freefire" class="ff-btn">Free Fire Tips</a>
+        <a href="#gta6" class="gta-btn">GTA 6 Updates</a>
+        <a href="#bgmi" class="bgmi-btn">BGMI Tricks</a>
+    </nav>
+
     <div class="container">
 
-        <!-- पहला पोस्ट: फ्री फायर -->
-        <article class="ff-post">
-            <h2>Free Fire में हर शॉट Headshot कैसे मारें? (Secret Settings)</h2>
+        <!-- पहला पोस्ट: फ्री फायर (ID जोड़ी गई है) -->
+        <article id="freefire" class="ff-post"><h2>Free Fire में हर shot Headshot कैसे मारें? (Secret Settings)</h2>
             <p>अगर आप भी फ्री फायर खेलते हैं और आपके हेडशॉट नहीं लगते, तो टेंशन मत लीजिए। आज मैं आपको बताने वाला हूँ वो सीक्रेट सेंसिटिविटी सेटिंग्स, जिसे बड़े-बड़े यूट्यूबर्स इस्तेमाल करते हैं।</p>
             <h3>🔥 प्रो-प्लेयर्स की Best Sensitivity Settings:</h3>
             <ul>
@@ -114,28 +142,27 @@
             <p><strong>टिप:</strong> फायर करते समय बटन को हल्का सा ऊपर खींचें (Drag करें)!</p>
         </article>
 
-        <!-- दूसरा पोस्ट: GTA 6 -->
-        <article class="gta-post">
+        <!-- दूसरा पोस्ट: GTA 6 (ID जोड़ी गई है) -->
+        <article id="gta6" class="gta-post">
             <h2>GTA 6 की लेटेस्ट अपडेट: जानिए क्या होगा इस बार नया?</h2>
             <p>रॉकस्टार गेम्स की सबसे बड़ी गेम <strong>GTA 6</strong> का इंतज़ार पूरी दुनिया के गेमर्स कर रहे हैं। इंटरनेट पर इसके मैप और किरदारों को लेकर कई बड़े खुलासे हुए हैं।</p>
-            <h3>🌆 गेम के मुख्य फीचर्स (Leaked Features):</h3><ul>
+            <h3>🌆 गेम के मुख्य फीचर्स (Leaked Features):</h3>
+            <ul>
                 <li><strong>वाइस सिटी की वापसी:</strong> इस बार गेम फिर से हमारे पसंदीदा शहर 'Vice City' में सेट होने वाला है।</li>
                 <li><strong>दो मुख्य किरदार:</strong> गेम में पहली बार Lucia और Jason की जोड़ी देखने को मिलेगी।</li>
             </ul>
         </article>
 
-        <!-- तीसरा पोस्ट: BGMI (नया पोस्ट) -->
-        <article class="bgmi-post">
+        <!-- तीसरा पोस्ट: BGMI (ID जोड़ी गई है) -->
+        <article id="bgmi" class="bgmi-post">
             <h2>BGMI में 'Conqueror' टियर कैसे पहुँचें? (Top 3 Pro Tips)</h2>
             <p>BGMI में रैंक पुश करना आसान नहीं होता, खासकर जब आप Conqueror टियर पर पहुँचने का सपना देख रहे हों। आज मैं आपको 3 ऐसी सीक्रेट टिप्स बताऊंगा जो आपका गेमप्ले तुरंत सुधार देंगी।</p>
-            
             <h3>🏆 रैंक पुश करने की 3 सीक्रेट ट्रिक्स:</h3>
             <ul>
-                <li><strong>सही ड्रॉप लोकेशन चुनें:</strong> शुरुआत में ही हॉट-ड्रॉप (जैसे Pochinki या Military Base) पर कूदने से बचें। हमेशा सेफ लैंड करें ताकि माइनस पॉइंट न लगें।</li>
-                <li><strong>ज़ोन प्रेडिक्शन और रोटेशन:</strong> हमेशा ज़ोन के साथ-साथ चलें। ज़ोन के किनारे (Edges) को पकड़कर खेलने से आप पीछे से आने वाले दुश्मनों से बच सकते हैं।</li>
-                <li><strong>स्मोक ग्रेनेड का सही इस्तेमाल:</strong> अपने बैग में कम से कम 4-5 स्मोक ग्रेनेड ज़रूर रखें। आखिरी ज़ोन में जब कोई कवर न हो, तो स्मोक ही आपकी जान बचाएगा।</li>
+                <li><strong>सही ड्रॉप लोकेशन चुनें:</strong> शुरुआत में ही हॉट-ड्रॉप पर कूदने से बचें।</li>
+                <li><strong>ज़ोन प्रेडिक्शन और रोटेशन:</strong> हमेशा ज़ोन के साथ-साथ चलें।</li>
+                <li><strong>स्मोक ग्रेनेड का सही इस्तेमाल:</strong> अपने बैग में कम से कम 4-5 स्मोक ग्रेनेड ज़रूर रखें।</li>
             </ul>
-            <p>इन टिप्स को फॉलो करें और इस सीज़न में अपना कॉन्करर फ्रेम पक्का करें!</p>
         </article>
 
     </div>
