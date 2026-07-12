@@ -4,77 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Karan Gaming Zone - Professional Gaming Blog</title>
-    <!-- 🆕 SEO Description (इसे गूगल में सर्च नहीं करना, बस कोडिंग में रहने देना है) -->
     <meta name="description" content="Karan Gaming Zone पर पाएं Free Fire, GTA 6, BGMI, Minecraft, और Call of Duty की सबसे तगड़ी टिप्स और ट्रिक्स।">
     
     <style>
-        /* प्रो-गेमिंग डार्क थीम */
-        body {
-            background-color: #1a1a2e;
-            color: #ffffff;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            margin: 0;
-            padding: 20px;
-            text-align: center;
-            scroll-behavior: smooth;
-        }
-        header {
-            background-color: #16161d;
-            padding: 30px;
-            border-radius: 10px;
-            border-bottom: 4px solid #ff4a5a;
-            box-shadow: 0px 4px 15px rgba(255, 74, 90, 0.3);
-            margin-bottom: 20px;
-        }
-        h1 {
-            color: #ff4a5a;
-            margin: 0 0 10px 0;
-            font-size: 32px;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-        }
-        header p {
-            color: #00ffd1;
-            font-size: 18px;
-            margin: 0;
-        }
-        
-        nav {
-            background-color: #16161d;
-            padding: 15px;
-            border-radius: 8px;
-            margin-bottom: 30px;
-            box-shadow: 0px 4px 10px rgba(0,0,0,0.4);
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            gap: 10px;
-        }
-        nav a {
-            color: #ffffff;
-            text-decoration: none;
-            font-weight: bold;
-            font-size: 14px;
-            padding: 8px 14px;
-            border-radius: 5px;
-            transition: 0.3s;
-        }
-        nav a:hover { background-color: #ff4a5a; color: #fff; }
-
+        body { background-color: #1a1a2e; color: #ffffff; font-family: sans-serif; margin: 0; padding: 20px; text-align: center; }
+        header { background-color: #16161d; padding: 30px; border-radius: 10px; border-bottom: 4px solid #ff4a5a; margin-bottom: 20px; }
+        h1 { color: #ff4a5a; margin: 0; }
+        nav { background-color: #16161d; padding: 15px; border-radius: 8px; display: flex; justify-content: center; flex-wrap: wrap; gap: 10px; margin-bottom: 30px; }
+        nav a { color: #ffffff; text-decoration: none; font-weight: bold; padding: 8px 14px; border-radius: 5px; transition: 0.3s; }
+        nav a:hover { background-color: #ff4a5a; }
         .container { max-width: 900px; margin: 0 auto; text-align: left; }
-        article, .about-section, .contact-section {
-            background-color: #222242;
-            padding: 30px;
-            border-radius: 12px;
-            margin-bottom: 30px;
-            box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.5);
-        }
-        .post-image { width: 100%; border-radius: 8px; margin-bottom: 20px; }
-        
-        .contact-form { display: flex; flex-direction: column; gap: 15px; margin-top: 20px; max-width: 500px; }
-        .contact-form input, .contact-form textarea { padding: 12px; border-radius: 6px; background-color: #16161d; color: #fff; border: 2px solid #555; }
+        article, .legal-section { background-color: #222242; padding: 30px; border-radius: 12px; margin-bottom: 30px; }
         .submit-btn { background-color: #ff00ff; color: white; border: none; padding: 12px; cursor: pointer; border-radius: 6px; }
-        footer { margin-top: 50px; color: #777; }
     </style>
 </head>
 <body>
@@ -85,35 +26,41 @@
     </header>
 
     <nav>
-        <a href="#freefire">Free Fire</a>
-        <a href="#gta6">GTA 6</a>
-        <a href="#bgmi">BGMI</a>
-        <a href="#minecraft">Minecraft</a>
-        <a href="#cod">COD</a>
-        <a href="#roblox">Roblox</a>
-        <a href="#pubg">PUBG New State</a>
+        <a href="#home">Home</a>
+        <a href="#privacy">Privacy</a>
+        <a href="#disclaimer">Disclaimer</a>
         <a href="#contact">Contact</a>
     </nav>
 
     <div class="container">
-        <article id="freefire"><h2>Free Fire हेडशॉट टिप्स</h2><p>प्रो बनने के लिए सही सेंसिटिविटी सेटिंग्स चुनें।</p></article>
-        <article id="gta6"><h2>GTA 6 अपडेट</h2><p>रॉकस्टार की नई गेम का इंतज़ार जारी है।</p></article>
-        <article id="bgmi"><h2>BGMI Conqueror टियर</h2><p>रैंक पुश करने के लिए प्रो स्ट्रेटेजी।</p></article>
-        <article id="minecraft"><h2>Minecraft सीक्रेट हाउस</h2><p>अपना बेस ज़ोम्बीज़ से सुरक्षित रखें।</p></article><article id="cod"><h2>COD Mobile सेटिंग्स</h2><p>ADS और FOV सेटिंग्स को करें ऑप्टिमाइज़।</p></article>
-        <article id="roblox"><h2>Roblox Robux गाइड</h2><p>सुरक्षित तरीके से Robux कमाने की जानकारी।</p></article>
-        <article id="pubg"><h2>PUBG New State कस्टमाइजेशन</h2><p>गन के पार्ट्स बदलकर उसे और पावरफुल बनाएं।</p></article>
+        <!-- आर्टिकल सेक्शन -->
+        <article id="home">
+            <h2>Welcome to Karan Gaming Zone</h2>
+            <p>यहाँ आपको गेमिंग की दुनिया के सबसे लेटेस्ट अपडेट और सीक्रेट ट्रिक्स मिलेंगे।</p>
+        </article>
 
-        <div id="contact" class="contact-section">
+        <!-- 🆕 प्राइवेसी पॉलिसी सेक्शन -->
+        <div id="privacy" class="legal-section">
+            <h2>Privacy Policy</h2>
+            <p>Karan Gaming Zone में आपकी निजता हमारे लिए महत्वपूर्ण है। हम आपकी कोई भी संवेदनशील व्यक्तिगत जानकारी एकत्र नहीं करते हैं। हम केवल बेहतर अनुभव के लिए कुकीज़ (Cookies) का उपयोग कर सकते हैं। यदि आप हमारी वेबसाइट का उपयोग जारी रखते हैं, तो आप हमारी प्राइवेसी पॉलिसी से सहमत हैं।</p>
+        </div>
+
+        <!-- 🆕 डिस्क्लेमर सेक्शन -->
+        <div id="disclaimer" class="legal-section">
+            <h2>Disclaimer</h2>
+            <p>इस वेबसाइट पर दी गई सभी जानकारी केवल सामान्य शैक्षिक और मनोरंजन के उद्देश्य से है। हम किसी भी गेमिंग कंपनी से आधिकारिक रूप से जुड़े नहीं हैं। गेम खेलते समय अपनी सुरक्षा का ध्यान रखें और सभी नियमों का पालन करें।</p>
+        </div>
+
+        <!-- कांटेक्ट सेक्शन -->
+        <div id="contact" class="legal-section">
             <h2>Contact Us</h2>
-            <form action="https://formspree.io/f/xoqgqpdl" method="POST" class="contact-form">
-                <input type="text" name="name" placeholder="नाम" required>
-                <input type="email" name="_replyto" placeholder="ईमेल" required>
-                <textarea name="message" placeholder="संदेश" required></textarea>
-                <button type="submit" class="submit-btn">भेजें</button>
+            <form action="https://formspree.io/f/xoqgqpdl" method="POST">
+                <input type="text" name="name" placeholder="आपका नाम" required style="padding:10px; width:95%; margin-bottom:10px;">
+                <textarea name="message" placeholder="संदेश" required style="padding:10px; width:95%; height:80px; margin-bottom:10px;"></textarea>
+                <button type="submit" class="submit-btn">संदेश भेजें</button>
             </form>
         </div>
     </div>
 
-    <footer><p>© 2026 Karan Gaming.</p></footer>
 </body>
 </html>
