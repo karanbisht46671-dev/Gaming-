@@ -63,6 +63,7 @@
         nav a.mc-btn:hover { background-color: #ffaa00; color: #000; }
         nav a.cod-btn:hover { background-color: #00a8ff; color: #fff; }
         nav a.roblox-btn:hover { background-color: #ffffff; color: #000; }
+        nav a.val-btn:hover { background-color: #ff4655; color: #fff; }
         nav a.about-btn:hover { background-color: #00ffd1; color: #000; }
         nav a.contact-btn:hover { background-color: #ff00ff; color: #fff; }
 
@@ -94,9 +95,12 @@
         .cod-post { border-left: 5px solid #00a8ff; }
         .cod-post h2 { color: #00a8ff; }
 
-        /* 🆕 रोब्लॉक्स पोस्ट स्टाइल */
         .roblox-post { border-left: 5px solid #ffffff; }
         .roblox-post h2 { color: #ffffff; }
+
+        /* 🆕 वैलोरेंट पोस्ट स्टाइल */
+        .val-post { border-left: 5px solid #ff4655; }
+        .val-post h2 { color: #ff4655; }
 
         .post-image {
             width: 100%;
@@ -111,11 +115,10 @@
         .about-section h2 { color: #00ffd1; }
 
         .contact-section { border-left: 5px solid #ff00ff; }
-        .contact-section h2 { color: #ff00ff; }
-
-        /* फॉर्म इनपुट स्टाइल्स */
+        .contact-section h2 { color: #ff00ff; }/* फॉर्म इनपुट स्टाइल्स */
         .contact-form {
-            display: flex;flex-direction: column;
+            display: flex;
+            flex-direction: column;
             gap: 15px;
             margin-top: 20px;
             max-width: 500px;
@@ -179,7 +182,7 @@
 
     <header>
         <h1>KARAN GAMING ZONE</h1>
-        <p>फ्री फायर, GTA, BGMI, Minecraft और COD की तगड़ी ट्रिक्स यहाँ मिलेंगी!</p>
+        <p>फ्री फायर, GTA, BGMI, Minecraft, COD और Valorant की तगड़ी ट्रिक्स यहाँ मिलेंगी!</p>
     </header>
 
     <nav>
@@ -188,8 +191,9 @@
         <a href="#bgmi" class="bgmi-btn">BGMI</a>
         <a href="#minecraft" class="mc-btn">Minecraft</a>
         <a href="#cod" class="cod-btn">Call of Duty</a>
-        <!-- 🆕 मेनू बार में रोब्लॉक्स बटन -->
         <a href="#roblox" class="roblox-btn">Roblox</a>
+        <!-- 🆕 मेनू बार में वैलोरेंट का बटन -->
+        <a href="#valorant" class="val-btn">Valorant</a>
         <a href="#about" class="about-btn">About Me</a>
         <a href="#contact" class="contact-btn">Contact Us</a>
     </nav>
@@ -200,11 +204,6 @@
         <article id="freefire" class="ff-post">
             <h2>Free Fire में हर shot Headshot कैसे मारें? (Secret Settings)</h2>
             <p>अगर आप भी फ्री फायर खेलते हैं और आपके हेडशॉट नहीं लगते, तो टेंशन मत लीजिए। आज मैं आपको बताने वाला हूँ वो सीक्रेट सेंसिटिविटी सेटिंग्स, जिसे बड़े-बड़े यूट्यूबर्स इस्तेमाल करते हैं।</p>
-            <h3>🔥 प्रो-प्लेयर्स की Best Sensitivity Settings:</h3>
-            <ul>
-                <li><strong>General:</strong> 95 से 100</li>
-                <li><strong>Red Dot:</strong> 90</li>
-            </ul>
         </article>
 
         <!-- दूसरा पोस्ट: GTA 6 -->
@@ -228,21 +227,22 @@
         <article id="cod" class="cod-post">
             <h2>Call of Duty Mobile: 3 सेटिंग्स जो आपको प्रो प्लेयर बना देंगी</h2>
             <p>COD Mobile एक बहुत ही तेज़ गेम है। अगर आपकी सेटिंग्स सही नहीं हैं, तो आप दुश्मनों से मुकाबला नहीं कर पाएंगे।</p>
-            <h3>🎮 बेस्ट कस्टमाइजेशन सेटिंग्स:</h3>
-            <ul>
-                <li><strong>ADS Mode:</strong> इसे हमेशा 'Advanced' पर रखें।</li>
-                <li><strong>FOV (Field of View):</strong> इसे 70 से 75 के बीच रखें।</li>
-            </ul>
         </article>
 
-        <!-- 🆕 छठा पोस्ट: रोब्लॉक्स (Roblox) -->
+        <!-- छठा पोस्ट: रोब्लॉक्स -->
         <article id="roblox" class="roblox-post">
             <h2>Roblox में फ्री Robux कैसे पाएं? (बिना किसी हैक के सुरक्षित तरीके)</h2>
-            <p>Roblox गेम में 'Robux' सबसे कीमती चीज़ है, जिससे आप नए कपड़े, गन्स और प्रीमियम आइटम्स खरीद सकते हैं। लेकिन बहुत से लोग नकली ऐप्स के चक्कर में अपनी आईडी बैन करवा लेते हैं। आज मैं आपको 100% असली और सुरक्षित तरीके बताऊंगा।</p>
-            <h3>💡 असली Robux कमाने के बेस्ट तरीके:</h3>
+            <p>Roblox गेम में 'Robux' सबसे कीमती चीज़ है। आज मैं आपको असली और सुरक्षित तरीके बताऊंगा जिससे आपकी आईडी कभी बैन नहीं होगी।</p>
+        </article>
+
+        <!-- 🆕 सातवां पोस्ट: वैलोरेंट (Valorant) -->
+        <article id="valorant" class="val-post">
+            <h2>Valorant: 'Iron' से 'Gold' रैंक तक तेज़ी से पुश करने की सीक्रेट गाइड</h2>
+            <p>Valorant में बहुत से प्लेयर्स अपनी रैंक 'Iron' या 'Bronze' से आगे नहीं बढ़ा पाते। इसका कारण सिर्फ गनप्ले नहीं, बल्कि कुछ गलत आदतें हैं। आज मैं आपको गेम सुधारने की 2 सबसे ज़रूरी टिप्स दूँगा।</p>
+            <h3>🎯 एम (Aim) सुधारने का तरीका:</h3>
             <ul>
-                <li><strong>Roblox Affiliate Program:</strong> अपने दोस्तों को गेम के आइटम्स शेयर करें, जब वो खरीदेंगे तो आपको कमीशन मिलेगा।</li>
-                <li><strong>अपना खुद का गेम बनाएं:</strong> अगर आपका बनाया गेम लोग खेलते हैं, तो आप उसमें गेम पास (Game Pass) बेचकर ढेर सारे Robux कमा सकते हैं।</li>
+                <li><strong>Crosshair Placement:</strong> अपनी क्रॉसहेयर को हमेशा दुश्मन के सिर (Head Level) की ऊँचाई पर रखें, ज़मीन पर नहीं।</li>
+                <li><strong>Crosshair Style:</strong> हमेशा एक छोटा प्लस (+) या डॉट क्रॉसहेयर चुनें ताकि निशाना लगाने में आसानी हो।</li>
             </ul>
         </article>
 
