@@ -57,6 +57,7 @@
         nav a.ff-btn:hover { background-color: #ff4a5a; color: #fff; }
         nav a.gta-btn:hover { background-color: #e0a96d; color: #000; }
         nav a.bgmi-btn:hover { background-color: #39ff14; color: #000; }
+        nav a.mc-btn:hover { background-color: #ffaa00; color: #000; }
         nav a.about-btn:hover { background-color: #00ffd1; color: #000; }
         nav a.contact-btn:hover { background-color: #ff00ff; color: #fff; }
 
@@ -82,6 +83,20 @@
         .bgmi-post { border-left: 5px solid #39ff14; }
         .bgmi-post h2 { color: #39ff14; }
 
+        /* 🆕 Minecraft पोस्ट स्टाइल (नियॉन गोल्ड) */
+        .mc-post { border-left: 5px solid #ffaa00; }
+        .mc-post h2 { color: #ffaa00; }
+
+        /* 📸 इमेज की कोडिंग (ताकि फोटो स्क्रीन पर फिट बैठे) */
+        .post-image {
+            width: 100%;
+            max-height: 350px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            border: 2px solid #555;
+        }
+
         .about-section { border-left: 5px solid #00ffd1; }
         .about-section h2 { color: #00ffd1; }
 
@@ -106,8 +121,7 @@
             padding: 20px 40px;
             border-radius: 8px;
             list-style-type: square;
-        }
-        li {
+        }li {
             font-size: 16px;
             margin-bottom: 10px;
             color: #fff;
@@ -126,18 +140,21 @@
 
     <header>
         <h1>KARAN GAMING ZONE</h1>
-        <p>फ्री फायर, GTA 5 और BGMI की तगड़ी ट्रिक्स यहाँ मिलेंगी!</p>
+        <p>फ्री फायर, GTA 5, BGMI और Minecraft की तगड़ी ट्रिक्स यहाँ मिलेंगी!</p>
     </header>
 
     <nav>
-        <a href="#freefire" class="ff-btn">Free Fire Tips</a>
-        <a href="#gta6" class="gta-btn">GTA 6 Updates</a>
-        <a href="#bgmi" class="bgmi-btn">BGMI Tricks</a>
+        <a href="#freefire" class="ff-btn">Free Fire</a>
+        <a href="#gta6" class="gta-btn">GTA 6</a>
+        <a href="#bgmi" class="bgmi-btn">BGMI</a>
+        <a href="#minecraft" class="mc-btn">Minecraft</a>
         <a href="#about" class="about-btn">About Me</a>
         <a href="#contact" class="contact-btn">Contact Us</a>
     </nav>
 
-    <div class="container"><!-- पहला पोस्ट: फ्री फायर -->
+    <div class="container">
+
+        <!-- पहला पोस्ट: फ्री फायर -->
         <article id="freefire" class="ff-post">
             <h2>Free Fire में हर shot Headshot कैसे मारें? (Secret Settings)</h2>
             <p>अगर आप भी फ्री फायर खेलते हैं और आपके हेडशॉट नहीं लगते, तो टेंशन मत लीजिए। आज मैं आपको बताने वाला हूँ वो सीक्रेट सेंसिटिविटी सेटिंग्स, जिसे बड़े-बड़े यूट्यूबर्स इस्तेमाल करते हैं।</p>
@@ -146,45 +163,48 @@
                 <li><strong>General:</strong> 95 से 100</li>
                 <li><strong>Red Dot:</strong> 90</li>
             </ul>
-            <p><strong>टिप:</strong> फायर करते समय बटन को हल्का सा ऊपर खींचें (Drag करें)!</p>
         </article>
 
         <!-- दूसरा पोस्ट: GTA 6 -->
         <article id="gta6" class="gta-post">
             <h2>GTA 6 की लेटेस्ट अपडेट: जानिए क्या होगा इस बार नया?</h2>
-            <p>रॉकस्टार गेम्स की सबसे बड़ी गेम <strong>GTA 6</strong> का इंतज़ार पूरी दुनिया के गेमर्स कर रहे हैं। इंटरनेट पर इसके मैप और किरदारों को लेकर कई बड़े खुलासे हुए हैं।</p>
-            <h3>🌆 गेम के मुख्य फीचर्स (Leaked Features):</h3>
-            <ul>
-                <li><strong>वाइस सिटी की वापसी:</strong> इस बार गेम फिर से हमारे पसंदीदा शहर 'Vice City' में सेट होने वाला है।</li>
-                <li><strong>दो मुख्य किरदार:</strong> गेम में पहली बार Lucia और Jason की जोड़ी देखने को मिलेगी।</li>
-            </ul>
+            <p>रॉकस्टार गेम्स की सबसे बड़ी गेम GTA 6 का इंतज़ार पूरी दुनिया के गेमर्स कर रहे हैं। इंटरनेट पर इसके मैप और किरदारों को लेकर कई बड़े खुलासे हुए हैं।</p>
         </article>
 
         <!-- तीसरा पोस्ट: BGMI -->
         <article id="bgmi" class="bgmi-post">
             <h2>BGMI में 'Conqueror' टियर कैसे पहुँचें? (Top 3 Pro Tips)</h2>
-            <p>BGMI में रैंक पुश करना आसान नहीं होता, खासकर जब आप Conqueror टियर पर पहुँचने का सपना देख रहे हों। आज मैं आपको 3 ऐसी सीक्रेट टिप्स बताऊंगा जो आपका गेमप्ले तुरंत सुधार देंगी।</p>
-            <h3>🏆 रैंक पुश करने की 3 सीक्रेट ट्रिक्स:</h3>
+            <p>BGMI में रैंक पुश करना आसान नहीं होता, खासकर जब आप Conqueror टियर पर पहुँचने का सपना देख रहे हों।</p>
+        </article>
+
+        <!-- 🆕 चौथा पोस्ट: Minecraft (इमेज के साथ) -->
+        <article id="minecraft" class="mc-post">
+            <h2>Minecraft में 'Secret House' कैसे बनाएं?</h2>
+            
+            <!-- 📸 यहाँ हमने फोटो लगाई है -->
+            <img src="https://images.unsplash.com/photo-1607604276583-eef5d076aa5f?w=800&auto=format&fit=crop&q=60" alt="Gaming Setup" class="post-image">
+
+            <p>Minecraft में अपने कीमती सामान जैसे डायमंड्स और गोल्ड को ज़ोम्बीज़ और दूसरे प्लेयर्स से छुपाने के लिए एक <strong>Secret House (गुप्त घर)</strong> होना बहुत ज़रूरी है। आज हम इसे आसानी से बनाना सीखेंगे।</p>
+            
+            <h3> मटीरियल जो आपको चाहिए होगा:</h3>
             <ul>
-                <li><strong>सही ड्रॉप लोकेशन चुनें:</strong> शुरुआत में ही हॉट-ड्रॉप पर कूदने से बचें।</li>
-                <li><strong>ज़ोन प्रेडिक्शन और रोटेशन:</strong> हमेशा ज़ोन के साथ-साथ चलें।</li>
+                <li><strong>Sticky Pistons:</strong> रास्ता छुपाने और खोलने के लिए।</li>
+                <li><strong>Redstone Dust:</strong> कनेक्शन जोड़ने के लिए।</li>
+                <li><strong>Lever or Pressure Plate:</strong> सीक्रेट दरवाज़ा एक्टिवेट करने के लिए।</li>
             </ul>
+            <p><strong>ट्रिप:</strong> अपने गुप्त घर का दरवाज़ा किसी पहाड़ के अंदर या पेड़ के नीचे बनाएं ताकि कोई शक न कर सके!</p>
         </article>
 
         <!-- About Me सेक्शन -->
         <div id="about" class="about-section">
             <h2>About Me (मेरे बारे में)</h2>
-            <p>हेलो गेमर्स! मेरा नाम <strong>करन</strong> है और मैं इस वेबसाइट का फाउंडर हूँ। मुझे गेम्स खेलना और उनके सीक्रेट्स, टिप्स और ट्रिक्स शेयर करना बहुत पसंद है। इस ब्लॉग पर आपको Free Fire, BGMI और GTA जैसे बड़े गेम्स की बिल्कुल सही और लेटेस्ट जानकारी मिलेगी।</p>
+            <p>हेलो गेमर्स! मेरा नाम करन है और मैं इस वेबसाइट का फाउंडर हूँ।</p>
         </div>
 
         <!-- Contact Us सेक्शन -->
         <div id="contact" class="contact-section">
             <h2>Contact Us (संपर्क करें)</h2>
-            <p>अगर आपके पास कोई गेमिंग टिप है, या आप हमसे किसी भी तरह का संपर्क करना चाहते हैं, तो आप हमें नीचे दिए गए माध्यम से मैसेज कर सकते हैं:</p>
-            <ul>
-                <li><strong>📧 ईमेल आईडी:</strong> karangamingzone@gmail.com</li>
-                <li><strong>🎮 गेमिंग आईडी:</strong> आप हमसे सीधे गेम में भी बात कर सकते हैं!</li>
-            </ul>
+            <p>📧 ईमेल आईडी: karangamingzone@gmail.com</p>
         </div>
 
     </div>
@@ -194,4 +214,4 @@
     </footer>
 
 </body>
-</html>
+</html>https://images.unsplash.com/photo-1607604276583-eef5d076aa5f?w=800&auto=format&fit=crop&q=60
