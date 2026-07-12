@@ -43,13 +43,16 @@
             border-radius: 8px;
             margin-bottom: 30px;
             box-shadow: 0px 4px 10px rgba(0,0,0,0.4);
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 10px;
         }
         nav a {
             color: #ffffff;
             text-decoration: none;
             font-weight: bold;
             font-size: 14px;
-            margin: 0 8px;
             padding: 8px 14px;
             border-radius: 5px;
             transition: 0.3s;
@@ -59,6 +62,7 @@
         nav a.bgmi-btn:hover { background-color: #39ff14; color: #000; }
         nav a.mc-btn:hover { background-color: #ffaa00; color: #000; }
         nav a.cod-btn:hover { background-color: #00a8ff; color: #fff; }
+        nav a.roblox-btn:hover { background-color: #ffffff; color: #000; }
         nav a.about-btn:hover { background-color: #00ffd1; color: #000; }
         nav a.contact-btn:hover { background-color: #ff00ff; color: #fff; }
 
@@ -90,6 +94,10 @@
         .cod-post { border-left: 5px solid #00a8ff; }
         .cod-post h2 { color: #00a8ff; }
 
+        /* 🆕 रोब्लॉक्स पोस्ट स्टाइल */
+        .roblox-post { border-left: 5px solid #ffffff; }
+        .roblox-post h2 { color: #ffffff; }
+
         .post-image {
             width: 100%;
             max-height: 350px;
@@ -105,10 +113,9 @@
         .contact-section { border-left: 5px solid #ff00ff; }
         .contact-section h2 { color: #ff00ff; }
 
-        /* 🆕 फॉर्म इनपुट स्टाइल्स */
+        /* फॉर्म इनपुट स्टाइल्स */
         .contact-form {
-            display: flex;
-            flex-direction: column;
+            display: flex;flex-direction: column;
             gap: 15px;
             margin-top: 20px;
             max-width: 500px;
@@ -117,7 +124,8 @@
             padding: 12px;
             border-radius: 6px;
             border: 2px solid #555;
-            background-color: #16161d;color: #fff;
+            background-color: #16161d;
+            color: #fff;
             font-size: 15px;
         }
         .contact-form input:focus, .contact-form textarea:focus {
@@ -180,6 +188,8 @@
         <a href="#bgmi" class="bgmi-btn">BGMI</a>
         <a href="#minecraft" class="mc-btn">Minecraft</a>
         <a href="#cod" class="cod-btn">Call of Duty</a>
+        <!-- 🆕 मेनू बार में रोब्लॉक्स बटन -->
+        <a href="#roblox" class="roblox-btn">Roblox</a>
         <a href="#about" class="about-btn">About Me</a>
         <a href="#contact" class="contact-btn">Contact Us</a>
     </nav>
@@ -207,14 +217,14 @@
         <article id="bgmi" class="bgmi-post">
             <h2>BGMI में 'Conqueror' टियर कैसे पहुँचें? (Top 3 Pro Tips)</h2>
             <p>BGMI में रैंक पुश करना आसान नहीं होता, खासकर जब आप Conqueror टियर पर पहुँचने का सपना देख रहे हों।</p>
-        </article>
-
-        <!-- चौथा पोस्ट: Minecraft -->
+        </article><!-- चौथा पोस्ट: Minecraft -->
         <article id="minecraft" class="mc-post">
             <h2>Minecraft में 'Secret House' कैसे बनाएं?</h2>
             <img src="https://images.unsplash.com/photo-1607604276583-eef5d076aa5f?w=800&auto=format&fit=crop&q=60" alt="Gaming Setup" class="post-image">
             <p>Minecraft में अपने कीमती सामान जैसे डायमंड्स और गोल्ड को ज़ोम्बीज़ और दूसरे प्लेयर्स से छुपाने के लिए एक Secret House होना बहुत ज़रूरी है।</p>
-        </article><!-- पांचवा पोस्ट: Call of Duty -->
+        </article>
+
+        <!-- पांचवा पोस्ट: Call of Duty -->
         <article id="cod" class="cod-post">
             <h2>Call of Duty Mobile: 3 सेटिंग्स जो आपको प्रो प्लेयर बना देंगी</h2>
             <p>COD Mobile एक बहुत ही तेज़ गेम है। अगर आपकी सेटिंग्स सही नहीं हैं, तो आप दुश्मनों से मुकाबला नहीं कर पाएंगे।</p>
@@ -225,18 +235,28 @@
             </ul>
         </article>
 
+        <!-- 🆕 छठा पोस्ट: रोब्लॉक्स (Roblox) -->
+        <article id="roblox" class="roblox-post">
+            <h2>Roblox में फ्री Robux कैसे पाएं? (बिना किसी हैक के सुरक्षित तरीके)</h2>
+            <p>Roblox गेम में 'Robux' सबसे कीमती चीज़ है, जिससे आप नए कपड़े, गन्स और प्रीमियम आइटम्स खरीद सकते हैं। लेकिन बहुत से लोग नकली ऐप्स के चक्कर में अपनी आईडी बैन करवा लेते हैं। आज मैं आपको 100% असली और सुरक्षित तरीके बताऊंगा।</p>
+            <h3>💡 असली Robux कमाने के बेस्ट तरीके:</h3>
+            <ul>
+                <li><strong>Roblox Affiliate Program:</strong> अपने दोस्तों को गेम के आइटम्स शेयर करें, जब वो खरीदेंगे तो आपको कमीशन मिलेगा।</li>
+                <li><strong>अपना खुद का गेम बनाएं:</strong> अगर आपका बनाया गेम लोग खेलते हैं, तो आप उसमें गेम पास (Game Pass) बेचकर ढेर सारे Robux कमा सकते हैं।</li>
+            </ul>
+        </article>
+
         <!-- About Me सेक्शन -->
         <div id="about" class="about-section">
             <h2>About Me (मेरे बारे में)</h2>
             <p>हेलो गेमर्स! मेरा नाम करन है और मैं इस वेबसाइट का फाउंडर हूँ। मुझे गेम्स खेलना और उनके सीक्रेट्स, टिप्स और ट्रिक्स शेयर करना बहुत पसंद है।</p>
         </div>
 
-        <!-- Contact Us सेक्शन + 🆕 वर्किंग फॉर्म -->
+        <!-- Contact Us सेक्शन -->
         <div id="contact" class="contact-section">
             <h2>Contact Us (संपर्क करें)</h2>
             <p>📧 ईमेल आईडी: karangamingzone@gmail.com</p>
             
-            <!-- मैसेज बॉक्स -->
             <form action="https://formspree.io/f/xoqgqpdl" method="POST" class="contact-form">
                 <input type="text" name="name" placeholder="आपका नाम" required>
                 <input type="email" name="_replyto" placeholder="आपकी ईमेल आईडी" required>
