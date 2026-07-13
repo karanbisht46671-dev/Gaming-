@@ -42,7 +42,15 @@
             <li><strong>Zenless Zone Zero:</strong> मोबाइल के लिए सबसे स्टाइलिश एक्शन गेम।</li>
         </ul>
         <p>आपका फेवरेट गेम कौन सा है? दोस्तों के साथ शेयर करें!</p>
-    </article>
+    </article><article>
+    <h2>GTA 6: गेमिंग इतिहास का सबसे बड़ा इंतज़ार</h2>
+    
+    <!-- यहाँ फोटो लगेगी -->
+    <img src="gta6-image.jpg" alt="GTA 6 Poster" style="width:100%; max-width:600px; border-radius:10px;">
+    
+    <p>गेमर्स का बरसों का इंतज़ार आखिरकार खत्म होने वाला है। GTA 6 केवल एक गेम नहीं, बल्कि एक अनुभव होने वाला है...</p>
+</article>
+
 
 </body>
 </html>
