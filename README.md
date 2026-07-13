@@ -1,4 +1,48 @@
-<header>
+<header style="text-align: center; margin-bottom: 20px;">
     <h1>Karan Gaming Zone</h1>
     <p>यह मेरी गेमिंग वेबसाइट है जहाँ मैं नए गेम्स के रिव्यू और अपडेट्स शेयर करता हूँ।</p>
-</header>
+</header><!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karan Gaming Zone</title>
+    <style>
+        body { background-color: #1a1a2e; color: #ffffff; font-family: sans-serif; margin: 0; padding: 15px; text-align: center; }
+        header { background-color: #16161d; padding: 20px; border-radius: 10px; border-bottom: 4px solid #ff4a5a; margin-bottom: 20px; }
+        h1 { color: #ff4a5a; margin: 0; }
+        nav { background-color: #16161d; padding: 10px; border-radius: 8px; display: flex; justify-content: center; gap: 10px; margin-bottom: 20px; }
+        nav a { color: #ffffff; text-decoration: none; font-weight: bold; padding: 8px; }
+        article { background-color: #222242; padding: 20px; border-radius: 10px; text-align: left; line-height: 1.8; }
+        ul { padding-left: 20px; }
+        li { margin-bottom: 10px; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>KARAN GAMING ZONE</h1>
+        <p>प्रो गेमिंग टिप्स और ट्रिक्स का हब!</p>
+    </header>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#privacy">Privacy</a>
+        <a href="#disclaimer">Disclaimer</a>
+    </nav>
+
+    <article>
+        <h2>2026 के टॉप 5 गेमिंग हिट्स</h2>
+        <p>क्या आप भी नए गेम्स के शौकीन हैं? 2026 में गेमिंग की दुनिया बदल गई है। यहाँ हमारे टॉप 5 पिक्स हैं:</p>
+        <ul>
+            <li><strong>GTA 6:</strong> गेमिंग इतिहास का सबसे बड़ा इंतज़ार।</li>
+            <li><strong>Resident Evil: Requiem:</strong> साल का सबसे बेहतरीन हॉरर गेम।</li>
+            <li><strong>Crimson Desert:</strong> लाजवाब ग्राफिक्स और शानदार स्टोरी।</li>
+            <li><strong>Forza Horizon 6:</strong> रेसिंग गेमर्स के लिए एक मास्टरपीस।</li>
+            <li><strong>Zenless Zone Zero:</strong> मोबाइल के लिए सबसे स्टाइलिश एक्शन गेम।</li>
+        </ul>
+        <p>आपका फेवरेट गेम कौन सा है? दोस्तों के साथ शेयर करें!</p>
+    </article>
+
+</body>
+</html>
